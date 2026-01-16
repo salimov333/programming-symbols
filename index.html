@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Programming Symbols Reference</title>
+    <style>
+      /* A4 page size and print settings */
+      @page {
+        size: A4;
+        margin: 15mm;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding: 0;
+        margin: 0;
+        line-height: 1.4;
+        background-color: #fff;
+      }
+
+      h2 {
+        text-align: center;
+        color: #2c3e50;
+        font-family: Arial, sans-serif;
+        margin-top: 10px;
+        direction: ltr; /* Ensure English title displays correctly */
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 10px;
+        table-layout: fixed; /* Ensures table doesn't overflow A4 width */
+      }
+
+      th,
+      td {
+        border: 1px solid #bdc3c7;
+        padding: 8px 4px;
+        text-align: center;
+        word-wrap: break-word;
+        font-size: 11pt; /* Suitable font size for printing */
+      }
+
+      th {
+        background-color: #34495e !important;
+        color: white !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2 !important;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
+
+      .en-de {
+        direction: ltr;
+        unicode-bidi: embed;
+        font-weight: bold;
+        font-family: "Consolas", "Courier New", monospace;
+        font-size: 10pt;
+      }
+
+      .symbol-cell {
+        font-family: "Consolas", "Courier New", monospace;
+        font-size: 13pt;
+        font-weight: bold;
+        color: #d35400;
+      }
+
+      /* Hide print button during PDF export/printing */
+      .no-print {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      button {
+        padding: 10px 25px;
+        background: #2980b9;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      @media print {
+        .no-print {
+          display: none;
+        }
+        body {
+          padding: 0;
+        }
+        table {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="no-print">
+      <button onclick="window.print()">Save as PDF / Print</button>
+    </div>
+
+    <h2>Essential Programming Symbols Table</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th style="width: 15%">الرمز</th>
+          <th style="width: 30%">English Name</th>
+          <th style="width: 25%">الاسم بالعربية</th>
+          <th style="width: 30%">Deutscher Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="symbol-cell">{ }</td>
+          <td class="en-de">Curly Braces</td>
+          <td>أقواس معقوفة</td>
+          <td class="en-de">Geschweifte Klammern</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">[ ]</td>
+          <td class="en-de">Square Brackets</td>
+          <td>أقواس مربعة</td>
+          <td class="en-de">Eckige Klammern</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">( )</td>
+          <td class="en-de">Parentheses</td>
+          <td>أقواس دائرية</td>
+          <td class="en-de">Klammern (Rund)</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">&lt; &gt;</td>
+          <td class="en-de">Angle Brackets</td>
+          <td>أقواس زاوية</td>
+          <td class="en-de">Spitze Klammern</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">;</td>
+          <td class="en-de">Semicolon</td>
+          <td>فاصلة منقوطة</td>
+          <td class="en-de">Semikolon</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">:</td>
+          <td class="en-de">Colon</td>
+          <td>نقطتان</td>
+          <td class="en-de">Doppelpunkt</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">.</td>
+          <td class="en-de">Dot / Period</td>
+          <td>نقطة</td>
+          <td class="en-de">Punkt</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">"</td>
+          <td class="en-de">Double Quote</td>
+          <td>علامة تنصيص مزدوجة</td>
+          <td class="en-de">Anführungszeichen</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">'</td>
+          <td class="en-de">Single Quote</td>
+          <td>علامة تنصيص مفردة</td>
+          <td class="en-de">Hochkomma</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">`</td>
+          <td class="en-de">Backtick</td>
+          <td>علامة الاقتباس المائلة</td>
+          <td class="en-de">Gravis / Backtick</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">/</td>
+          <td class="en-de">Forward Slash</td>
+          <td>مائلة للأمام</td>
+          <td class="en-de">Schrägstrich</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">\</td>
+          <td class="en-de">Backslash</td>
+          <td>مائلة للخلف</td>
+          <td class="en-de">Backslash</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">|</td>
+          <td class="en-de">Vertical Bar / Pipe</td>
+          <td>خط عمودي</td>
+          <td class="en-de">Senkrechter Strich</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">&&</td>
+          <td class="en-de">Logical AND</td>
+          <td>"و" المنطقية</td>
+          <td class="en-de">Logisches UND</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">||</td>
+          <td class="en-de">Logical OR</td>
+          <td>"أو" المنطقية</td>
+          <td class="en-de">Logisches ODER</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">!</td>
+          <td class="en-de">Logical NOT</td>
+          <td>"ليس" المنطقية</td>
+          <td class="en-de">Logisches NICHT</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">==</td>
+          <td class="en-de">Equality Operator</td>
+          <td>معامل المساواة</td>
+          <td class="en-de">Gleichheitsoperator</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">===</td>
+          <td class="en-de">Strict Equality</td>
+          <td>مساواة صارمة</td>
+          <td class="en-de">Strikte Gleichheit</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">!=</td>
+          <td class="en-de">Not Equal</td>
+          <td>لا يساوي</td>
+          <td class="en-de">Ungleich</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">=&gt;</td>
+          <td class="en-de">Arrow Function</td>
+          <td>دالة السهم</td>
+          <td class="en-de">Pfeilfunktion</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">-&gt;</td>
+          <td class="en-de">Lambda Arrow</td>
+          <td>سهم اللامدا</td>
+          <td class="en-de">Lambda-Pfeil</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">++</td>
+          <td class="en-de">Increment</td>
+          <td>زيادة</td>
+          <td class="en-de">Inkrement</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">--</td>
+          <td class="en-de">Decrement</td>
+          <td>نقصان</td>
+          <td class="en-de">Dekrement</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">? :</td>
+          <td class="en-de">Ternary / Elvis</td>
+          <td>المعامل الشرطي</td>
+          <td class="en-de">Ternärer / Elvis-Operator</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">~</td>
+          <td class="en-de">Tilde</td>
+          <td>علامة المد</td>
+          <td class="en-de">Tilde</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">@</td>
+          <td class="en-de">At / Annotation</td>
+          <td>علامة التوصيف</td>
+          <td class="en-de">At-Zeichen</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">#</td>
+          <td class="en-de">Hash / ID</td>
+          <td>وسم / معرف</td>
+          <td class="en-de">Raute / Hash</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">$</td>
+          <td class="en-de">Dollar Sign</td>
+          <td>علامة الدولار</td>
+          <td class="en-de">Dollarzeichen</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">%</td>
+          <td class="en-de">Modulo</td>
+          <td>باقي القسمة</td>
+          <td class="en-de">Modulo</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">&amp;</td>
+          <td class="en-de">Ampersand</td>
+          <td>علامة الربط</td>
+          <td class="en-de">Und-Zeichen</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">*</td>
+          <td class="en-de">Asterisk</td>
+          <td>نجمة</td>
+          <td class="en-de">Sternchen</td>
+        </tr>
+        <tr>
+          <td class="symbol-cell">_</td>
+          <td class="en-de">Underscore</td>
+          <td>شرطة سفلية</td>
+          <td class="en-de">Unterstrich</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
